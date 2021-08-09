@@ -1,0 +1,9 @@
+network:
+  version: 2
+  ethernets:
+    ens5: {}
+  vlans:
+    vlan.30:
+      id: 30
+      link: ens5
+      addresses: [172.32.16.1/24]

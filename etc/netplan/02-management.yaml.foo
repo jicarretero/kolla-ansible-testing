@@ -1,0 +1,20 @@
+network:
+  bonds:
+    bond0:
+      interfaces:
+      - ens5
+      parameters:
+        lacp-rate: fast
+        mode: 802.3ad        
+        transmit-hash-policy: layer2
+  ethernets:
+    ens5: {}
+  version: 2
+  vlans:
+    bond0.30:
+      addresses:
+      - 172.32.16.2/24
+      id: 30
+      link: bond0
+      dhcp4: no
+      dhcp6: no

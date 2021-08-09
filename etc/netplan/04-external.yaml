@@ -1,0 +1,9 @@
+network:
+  version: 2
+  ethernets:
+    ens4: {}
+  vlans:
+    vlan.10:
+      id: 10
+      link: ens4
+      addresses: []

@@ -1,0 +1,9 @@
+network:
+  version: 2
+  ethernets:
+    ens7: {}
+  vlans:
+    vlan.20:
+      id: 20
+      link: ens7
+      addresses: [172.32.18.1/24]
